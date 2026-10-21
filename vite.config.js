@@ -1,37 +1,15 @@
 import { defineConfig } from 'vite';
-import path from 'node:path';
-const __dirname = import.meta.dirname;
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
+  plugins: [react()],
   server: {
-    hmr: {
-      protocol: 'ws',
-      host: 'localhost',
-    },
-  },
-  resolve: {
-    alias: {
-      '@server': path.resolve(__dirname, 'server'),
-      '@components': path.resolve(__dirname, 'server/components'),
-      '@views': path.resolve(__dirname, 'server/views'),
-      '@layouts': path.resolve(__dirname, 'server/layouts'),
-      '@client': path.resolve(__dirname, 'client'),
+    port: 5173,
+    proxy: {
+      '/api': 'http://localhost:3000',
     },
   },
   build: {
-    publicDir: 'client',
-    cssCodeSplit: true,
-    minify: false,
-    emptyOutDir: false,
     outDir: 'dist',
-    rollupOptions: {
-      input: path.resolve(__dirname, 'client/index.js'),
-      output: {
-        entryFileNames: '[name].js',
-        chunkFileNames: '[name].js',
-        assetFileNames: '[name].[ext]',
-      }
-    },
   },
 });

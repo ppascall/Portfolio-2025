@@ -1,0 +1,40 @@
+:root {
+  /* Palette: change these to re-theme the whole site. */
+  --bg: #0b0b0b;
+  --bg-raised: #121214;
+  --bg-hover: #17171a;
+  --line: #232326;
+  --line-strong: #34343a;
+  --fg: #f1eee8;
+  --fg-soft: #c5c6cb;
+  --fg-dim: #9b9da5;
+  --fg-faint: #5e5f64;
+  --accent: #536dff;
+  --accent-dim: #465cd6;
+  --accent-2: #b5a4ff;
+  --on-accent: #0b0b0b;
+  --header-bg: color-mix(in srgb, var(--bg) 72%, transparent);
+  --shadow: rgba(0, 0, 0, 0.5);
+
+  --font-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+
+  --type-mega: clamp(2.75rem, 11.5vw, 11rem);
+  --type-giant: clamp(2.5rem, 9vw, 8rem);
+  --type-page: clamp(2.75rem, 9vw, 7rem);
+  --type-section: clamp(1.85rem, 4.5vw, 3.25rem);
+
+  --pad: clamp(1.25rem, 4vw, 3.5rem);
+  --header-h: 4.5rem;
+  --section-gap: clamp(4rem, 9vw, 8rem);
+  --radius-full: 9999px;
+
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --z-header: 100;
+  --z-grain: 400;
+  --z-cursor: 900;
+  --z-modal: 1000;
+  --z-loader: 1100;
+}
