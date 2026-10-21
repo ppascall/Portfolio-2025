@@ -136,7 +136,7 @@ main {
 }
 
 .accent {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 /* Italic serif accent word inside headings */
@@ -144,7 +144,7 @@ main {
 .hl-em {
   font-family: var(--font-serif);
   font-style: italic;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .dot {
@@ -362,7 +362,7 @@ html.konami-active {
 }
 
 .preloader__name .line-mask:last-child .line {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .preloader__meta {

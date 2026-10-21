@@ -30,7 +30,7 @@
 }
 
 .site-nav__star {
-  color: var(--accent);
+  color: var(--accent-text);
   font-size: 0.8em;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .site-nav__links a[aria-current='page'] {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .site-nav__actions {
@@ -141,7 +141,7 @@
 }
 
 .site-footer__star {
-  color: var(--accent);
+  color: var(--accent-text);
   font-family: var(--font-sans);
   font-style: normal;
   margin-left: 0.1em;
@@ -211,7 +211,7 @@
   font-family: var(--font-sans);
   font-style: normal;
   font-size: 0.45em;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 @keyframes marquee-scroll {
@@ -250,8 +250,8 @@
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: var(--fg);
-  color: var(--bg);
+  background: #fff;
+  color: #1b1814;
 }
 
 .image-popover-close::before,
@@ -262,7 +262,7 @@
   left: 50%;
   width: 16px;
   height: 2px;
-  background: var(--bg);
+  background: #1b1814;
 }
 
 .image-popover-close::before {

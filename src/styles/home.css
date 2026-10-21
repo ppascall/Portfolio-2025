@@ -47,7 +47,7 @@
 }
 
 .hero__serif em {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .hero__star {
@@ -146,8 +146,13 @@
   display: block;
   height: 100%;
   overflow: hidden;
-  background: var(--bg-raised);
+  background: #1b1814;
+  color: #f7f3ec;
   border-top: 1px solid var(--line);
+}
+
+.featured__card .accent {
+  color: var(--accent);
 }
 
 .featured__image {
@@ -252,7 +257,7 @@
 }
 
 .work-row__link:hover .work-row__title .roll__b {
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .work-row__meta {
@@ -267,7 +272,7 @@
 
 .work-row__link:hover .work-row__arrow {
   transform: rotate(45deg);
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .selected__all {
@@ -281,7 +286,7 @@
 
 .selected__all:hover,
 .selected__all:focus-visible {
-  color: var(--accent);
+  color: var(--accent-text);
   border-color: var(--accent);
 }
 
@@ -366,8 +371,8 @@
 }
 
 .quiz__choice.is-wrong {
-  border-color: #ff6b6b;
-  color: #ff6b6b;
+  border-color: var(--danger);
+  color: var(--danger);
 }
 
 .quiz__choice:disabled:not(.is-right):not(.is-wrong) {
@@ -382,13 +387,13 @@
 }
 
 .quiz__wrong {
-  color: #ff6b6b;
+  color: var(--danger);
 }
 
 .quiz__next {
   display: block;
   margin-top: 1rem;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .quiz__note {

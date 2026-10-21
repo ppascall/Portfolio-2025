@@ -1,20 +1,24 @@
 :root {
+  color-scheme: light;
+
   /* Palette: change these to re-theme the whole site. */
-  --bg: #0b0b0b;
-  --bg-raised: #121214;
-  --bg-hover: #17171a;
-  --line: #232326;
-  --line-strong: #34343a;
-  --fg: #f1eee8;
-  --fg-soft: #c5c6cb;
-  --fg-dim: #9b9da5;
-  --fg-faint: #5e5f64;
-  --accent: #536dff;
-  --accent-dim: #465cd6;
-  --accent-2: #b5a4ff;
-  --on-accent: #0b0b0b;
+  --bg: #fbf8f3;
+  --bg-raised: #ffffff;
+  --bg-hover: #f4efe7;
+  --line: #e8e1d6;
+  --line-strong: #d2c9bb;
+  --fg: #1b1814;
+  --fg-soft: #3b352e;
+  --fg-dim: #6a6359;
+  --fg-faint: #867f74;
+  --accent: #ffa05a;
+  --accent-dim: #f28c40;
+  --accent-text: #cf5f14;
+  --accent-2: #e9803a;
+  --on-accent: #1b1814;
+  --danger: #c93a3a;
   --header-bg: color-mix(in srgb, var(--bg) 72%, transparent);
-  --shadow: rgba(0, 0, 0, 0.5);
+  --shadow: rgba(27, 24, 20, 0.12);
 
   --font-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
   --font-sans: 'Space Grotesk', system-ui, sans-serif;

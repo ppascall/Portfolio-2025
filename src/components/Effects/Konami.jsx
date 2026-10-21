@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { gsap, prefersReducedMotion } from '../../lib/motion.js';
 
 const SEQUENCE = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-const COLORS = ['#536dff', '#b5a4ff', '#f1eee8', '#ffce62', '#ff7a4e'];
+const COLORS = ['#ffa05a', '#ffc48a', '#1b1814', '#ffd27a', '#ff7a4e'];
 
 function burst() {
   if (prefersReducedMotion()) return;
